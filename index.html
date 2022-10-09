@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with-device-width,initial-scale=1.0">
+        <title>Pearl of the Indian Ocean</title>
+        <link rel=javaScript href="javaScript.js">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;1,100;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src=""></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="./index.html">HOME</a></li>
+                        <li><a href="./About.html">ABOUT</a></li>
+                        <li><a href="https://computingtechnologyblogger.blogspot.com/">BLOCK</a></li>
+                        <li><a href="./Contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+
+            <div class="text-box">
+                <h1>WELCOME TO SRI LANKA</h1>
+                <p>Sri Lanka is usually mentioned as "the pearl of the Indian Ocean." <br>
+                    No surprise, considering the very fact that there's an excellent deal to get on this tropical island with around twenty one 
+                    million inhabitants: Dream beaches, cultural treasures, made diversity, and hearty cookery.</p><br>
+                
+                <div class="main">
+                    <input type="text" name="Search" placeholder="Search...">
+                    <button>SEARCH</button>
+                </div>
+            </div>
+        </section>
+
+
+<!-----------------WILD------------------->
+        <section class="wild">
+            <h1>WILD</h1>
+            <p>Forests are one of the attractions of Sri Lanka.
+                 Some of these attractions are Sinharaja Forest, Yala National Park,
+                 Kanneliya Rainforest Reserve,  Makandawa Reserve. ect...
+            </p>
+
+            <div class="row">
+                <div class="wild-col1"><a href="WILD/Sinharaja.html" target="blank">
+                    <img src="WILD/sinharaja.JPG">
+                    <div class="layer">
+                        <h3> SINHARAJA RAIN FOREST</h3>
+                    </div>
+                </a></div>
+
+                <div class="wild-col2"><a href="WILD/Yala_National_Park.html" target="blank">
+                    <img src="WILD/elephant.jpg">
+                    <div class="layer">
+                        <h3>YALA NATIONAL PARK</h3>
+                    </div>
+                </a></div>
+
+                <div class="wild-col3"><a href="WILD/Kanneliya.html" target="blank">
+                    <img src="WILD/Kanneliya-Rainforest.jpg">
+                    <div class="layer">
+                        <h3>KANNELIYA RAINFOREST RESERVE</h3>
+                    </div>
+                </a></div>
+            </div>
+
+            <div class="row">
+                <div class="wild-col4"><a href="WILD/Makandawa.html" target="blank">
+                    <img src="WILD/makandawa.JPG">
+                    <div class="layer">
+                        <h3>MAKANDAWA RAINFOREST</h3>
+                    </div>
+                </a></div>
+            </div>
+
+        </section>
+
+<!----------------Cultural Heritage-------------------->
+        <section class="heritage">
+            <h1>CULTURAL HERITAGE</h1>
+            <p>Sri Lanka's cultural depth is recognized by UNESCO, which has declared six 
+                archaeological World Heritage Sites in the country<br></p>
+
+                <div class="row">
+                    <div class="heritage-col1"><a href="CULTURAL HERITAGE/Anuradhapura.html" target="blank">
+                        <img src="CULTURAL HERITAGE/anuradhapura.JPG">
+                        <div class="layer">
+                            <h3>ANURADHAPURA</h3>
+                        </div>
+                    </a></div>
+    
+                    <div class="heritage-col2"><a href="CULTURAL HERITAGE/Polonnaruwa.html" target="blank">
+                        <img src="CULTURAL HERITAGE/polonnaruwa.jpg">
+                        <div class="layer">
+                            <h3>POLONNARUWA</h3>
+                        </div>
+                    </a></div>
+    
+                    <div class="heritage-col3"><a href="CULTURAL HERITAGE/Dambulla.html" target="blank">
+                        <img src="CULTURAL HERITAGE/dambulla.jpg">
+                        <div class="layer">
+                            <h3>DAMBULLA</h3>
+                        </div>
+                    </a></div>
+                </div>
+
+                    <div class="row">
+                        <div class="heritage-col4"><a href="CULTURAL HERITAGE/Sigiriya.html" target="blank">
+                            <img src="CULTURAL HERITAGE/sigiriya.jpg">
+                            <div class="layer">
+                                <h3>SIGIRIYA</h3>
+                            </div>
+                        </a></div>
+                    </div>
+
+
+<!--------------Call to action--------------->
+    <section class="cta">
+        <h1>Join With Us</h1>
+        <a href="./Contact.html" class="hero-btn">CONTACT US</a>
+    </section>
+
+<!----------------Footer----------------->
+    <section class="footer">
+        <h4>About Us</h4>
+        <div class="icons">
+            <i class="fa fa-facebook-square"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made with Sri Lanka</p>
+    </section>
+
+<!-----------javaScript for Toggle Menu----------->
+        <script>
+            var navLinks=document.getElementById("navLinks");
+            function showMenu(){
+            navLinks.style.right="0";
+        }
+
+            function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+        </script>
+    </body>
+</html>

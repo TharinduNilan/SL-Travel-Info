@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with-device-width,initial-scale=1.0">
+        <title>About</title>
+        <link rel=javaScript href="javaScript.js">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;1,100;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+
+    </head>
+    <body>
+    <!------------------------------------------------
+    --------------------------------------------------
+    --------------------HTML--------------------------
+    --------------------------------------------------
+    -------------------------------------------------->
+
+       
+            <section class="header">
+            <nav>
+                <a href="../index.html"><img src=""></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="../index.html">HOME</a></li>
+                        <li><a href="./About.html">ABOUT</a></li>
+                        <li><a href="https://computingtechnologyblogger.blogspot.com/">BLOCK</a></li>
+                        <li><a href="./Contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+        </section>
+        <br>
+<!-----------Introduction------------>
+<div class="container">
+
+    <div class="intro">
+        <div>
+            <h1 style="text-align:center;">ABOUT ME</h1>
+        <p style="text-align:center;"><b>Hi, I'm Tharindu, Nice to meat you. 
+            Please take a look around.</b></p>
+        <p style="text-align:center;">I'm Undergraduate Software Engineer at the Open University Of Sri Lanka,</p>
+        <p style="text-align:center;">I am a person who enjoys life whenever possible. 
+            I like learning about modern technology. 
+            Also, I like experimenting with new things.</p>
+        </div>
+    </div>
+</div>
+
+<!----------------Footer----------------->
+    <section class="footer">
+        <h4>About Us</h4>
+        <div class="icons">
+            <i class="fa fa-facebook-square"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made with Sri Lanka</p>
+    </section>
+
+<!--------------------------------------------
+----------------------------------------------
+-------------------Style----------------------
+---------------------------------------------
+---------------------------------------------->
+
+<style>
+    *{
+        margin:0;
+        padding:0;
+        font-family: 'Poppins', sans-serif;
+        align-items: center;
+        justify-self: center;
+      }
+      
+      .a:after{
+        color: #000000;
+      }
+      
+      .header{
+        min-height: 5vh;
+        width:100%;
+        background-color: rgb(11, 19, 65);
+        background-position: center;
+        position: relative;
+      }
+      nav{
+        display: flex;
+        padding: 2% 6%;
+        justify-content: space-between;
+        align-items: center;
+      }
+      
+      nav img{
+        width: 150px;
+      }
+      
+      .nav-links{
+        flex:1;
+        text-align: right;
+      }
+      
+      .nav-links ul li{
+        list-style: none;
+        display: inline-block;
+        padding: 8px 12px;
+        position: relative;
+      }
+      
+      .nav-links ul li a{
+        color: #fff;
+        text-decoration: none;
+        font-size: 13px;
+      }
+      
+      .nav-links ul li ::after{
+        content: '';
+        width: 0%;
+        height: 2px;
+        background: #f44336;
+        display: block;
+        margin: auto;
+        transition: 0.1s;
+      }
+      
+      .nav-links ul li :hover::after{
+        width: 100%;
+      }
+    
+      nav .fa{
+        display: none;
+      }
+
+    /*-----------------Intro---------------*/
+    .container{
+        height: 100vh;
+    }
+    .intro{
+        top: 50px;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+    /*------------------Footer--------------*/
+    .footer{
+      width: 100%;
+      text-align: center;
+      padding: 600;
+      background-color:  rgb(148, 248, 215);
+    }
+    
+    .footer h4{
+      margin-bottom: 25px;
+      margin-top: 20px;
+      font-weight: 600;
+    }
+    
+    /*--------------Meadia-------------*/
+      @media(max-width :700px){
+        .text-box h1 {
+          font-size: 50px;
+        }
+      
+        .nav-links ul li{
+          display: block;
+        }
+      
+        .nav-links{
+          position: absolute;
+          background: #f44336;
+          height: 100vh;
+          width: 200px;
+          top:0;
+          right: -200px;
+          text-align: left;
+          z-index: 2;
+        }
+      
+        nav .fa{
+          display: block;
+          color: #fff;
+          margin: 10px;
+          font-size: 22px;
+          cursor: pointer;
+        }
+      
+        .nav-links ul{
+          padding: 30px;
+        }
+
+        .intro{
+        margin-bottom: 100%;
+    }
+
+      }
+    </style>
+
+<!-----------javaScript for Toggle Menu-----------
+---------------------------------------------------
+---------------------------------------------------
+--------------------------------------------------->
+<script>
+    var navLinks=document.getElementById("navLinks");
+    function showMenu(){
+    navLinks.style.right="0";
+}
+
+    function hideMenu(){
+    navLinks.style.right="-200px";
+}
+</script>
+</body>
+</html>
