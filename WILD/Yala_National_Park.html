@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with-device-width,initial-scale=1.0">
+        <title>Yala Rain Forest</title>
+        <link rel=javaScript href="javaScript.js">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;1,100;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+
+    </head>
+    <body>
+
+    <!----------------------------------------
+    ------------------------------------------
+    -------------------HTML-------------------
+    ------------------------------------------
+    ------------------------------------------>
+        <section class="header">
+            <nav>
+                <a href="../index.html"><img src=""></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="../index.html">HOME</a></li>
+                        <li><a href="../About.html">ABOUT</a></li>
+                        <li><a href="https://computingtechnologyblogger.blogspot.com/">BLOCK</a></li>
+                        <li><a href="">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <div class="text-box">
+                <h1>YALA NATIONAL PARK<br>RESERVE</h1>
+            </div>
+        </section>
+        <br>
+
+<!-----------Introduction------------>
+        <section class="Background">
+            <div class="row">
+              <div class="col-in"> 
+                <img src="yala.jpg">
+              </div>
+
+              <div class="col-in1">
+                <img src="yala map.jpg"> 
+              </div>
+            </div>
+            <br>
+            <div class="Introduction">
+            <h1><u>Introduction</u></h1><br>
+            <p>Yala National Park is the second-largest national park in Sri Lanka.
+              The park is located about 300km from Colombo, the capital of Sri Lanka. 
+              Yala belongs to the Uva and Southern Provinces of Sri Lanka. 
+              The park is divided into 5 sections and sections 1 and 2 are reserved for the public.<br><br>
+              This park is a large park spread over the southwest. 
+              It covers an area of about 979 square kilometers in both the Uva and Southern Provinces. 
+              However, only 141 square kilometers of land have been set aside for the public.</p>
+            </div>
+            <br>
+            <h1><u>Regions</u></h1>
+        </section>
+        <table border="1px">
+            <tr>
+                <th>Region</th>
+                <th>Size</th>
+                <th>Date of joining the park</th>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>14,101 hectares (54.44 sq mi)</td>
+                <td>1938</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>9,931 hectares (38.34 sq mi)</td>
+                <td>1954</td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>40,775 hectares (157.43 sq mi)</td>
+                <td>1967</td>
+            </tr>
+
+            <tr>
+                <td>4</td>
+                <td>126,418 hectares (102.00 sq mi)	</td>
+                <td>1969</td>
+            </tr>
+
+            <tr>
+                <td>5</td>
+                <td>6,656 hectares (25.70 sq mi)</td>
+                <td>1973</td>
+            </tr>
+        </table>
+        <br>
+
+    <section class="Acc">
+        <h2><u>Access The Park</u></h2>
+        <ol style= "margin-left:1% ; text-align: justify;">
+            <li>From Colombo to Hambantota Tissamaharama Kirinda Road and turn off at Yala Junction Palatupana Park Headquarters is one access road.</li>
+            <li>Colombo Ratnapura Embilipitiya Suriyawewa Mirijjawila via Hambantota or</li>
+            <li>Colombo Ratnapura Udawalawe Thanamalwila Tissamaharama Yala Junction</li>
+            <li>You can also reach the park from the Thanamalwila Lunugamvehera junction by coming to Kataragama over the reservoir dam.</li>
+            <li>Mahiyangana Bibila Buttala Sellakataragama Katagamuwa is also one of the access roads.</li>
+        </ol>
+    </section>
+
+<!----------------Footer----------------->
+    <section class="footer">
+        <h4>About Us</h4>
+        <div class="icons">
+            <i class="fa fa-facebook-square"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made with</p>
+    </section>
+
+
+<!--------------------------------------------
+----------------------------------------------
+-------------------Style----------------------
+---------------------------------------------
+---------------------------------------------->
+
+<style>
+    *{
+        margin:0;
+        padding:0;
+        font-family: 'Poppins', sans-serif;
+      }
+      
+      .a:after{
+        color: #000000;
+      }
+      
+      .header{
+        min-height: 100vh;
+        width:100%;
+        background-image: linear-gradient(rgba(6, 10, 32, 0.527),rgba(4, 10, 32, 0.527)),url(elephant2.JPG);
+        background-position: center;
+        background-size: cover;
+        position: relative;
+      }
+      nav{
+        display: flex;
+        padding: 2% 6%;
+        justify-content: space-between;
+        align-items: center;
+      }
+      
+      nav img{
+        width: 150px;
+      }
+      
+      .nav-links{
+        flex:1;
+        text-align: right;
+      }
+      
+      .nav-links ul li{
+        list-style: none;
+        display: inline-block;
+        padding: 8px 12px;
+        position: relative;
+      }
+      
+      .nav-links ul li a{
+        color: #fff;
+        text-decoration: none;
+        font-size: 13px;
+      }
+      
+      .nav-links ul li ::after{
+        content: '';
+        width: 0%;
+        height: 2px;
+        background: #f44336;
+        display: block;
+        margin: auto;
+        transition: 0.1s;
+      }
+      
+      .nav-links ul li :hover::after{
+        width: 100%;
+      }
+    
+      nav .fa{
+        display: none;
+      }
+    
+      .text-box h1{
+        font-size: 62px;
+        color: rgb(255, 255, 255);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+      }
+    
+    /*------------Introduction---------------*/
+    .Background{
+      margin-top: -3%;
+      margin-left: 1%;
+      padding-right: 40%;
+      text-align: justify;
+    }
+    
+    .Introduction h1{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 28px;
+    }
+    
+    .Introduction p{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        font-weight: 100vh;
+    }
+    
+    /*-----------------Table--------------*/
+    table{
+        padding:1px solid black;
+        border-collapse: collapse;
+        margin-left: 1%;
+    }
+
+    table th{
+        text-align: center;
+        padding:4px 30px 4px 8px;
+    }
+
+    table td{
+        padding: 4px 8px;
+        text-align: center;
+    }
+
+    .Acc{
+        margin-left: 1%;
+        padding-right: 40%;
+        text-align: justify;
+    }
+
+    .row{
+        margin-top: 5%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .col-in img{
+      width: 228%;
+    }
+
+    .col-in1 img{
+        display: block;
+        background-size: 90%;
+        background-position:absolute;
+        padding-left: 124%;
+        height: 95%;
+    }
+
+    /*------------------Footer--------------*/
+    .footer{
+      width: 100%;
+      text-align: center;
+      padding: 600;
+      background-color:  rgb(148, 248, 215);
+    }
+    
+    .footer h4{
+      margin-bottom: 25px;
+      margin-top: 20px;
+      font-weight: 600;
+    }
+    
+    /*--------------Meadia-------------*/
+      @media(max-width :700px){
+        .text-box h1 {
+          font-size: 50px;
+        }
+      
+        .nav-links ul li{
+          display: block;
+        }
+      
+        .nav-links{
+          position: absolute;
+          background: #f44336;
+          height: 100vh;
+          width: 200px;
+          top:0;
+          right: -200px;
+          text-align: left;
+          z-index: 2;
+        }
+      
+        nav .fa{
+          display: block;
+          color: #fff;
+          margin: 10px;
+          font-size: 22px;
+          cursor: pointer;
+        }
+      
+        .nav-links ul{
+          padding: 30px;
+        }
+    
+        .img1{
+          background-size: 10%;
+        }
+
+        .Introduction{
+          margin-left: -4%;
+          margin-right: -65%;
+        }
+
+        /*--------------Introduction-------------*/
+        .Background{
+          display: block;
+          margin-left: 6%;
+        }
+
+        .row{
+          display: block;
+        }
+
+        .col-in img{
+          margin-left: 2%;
+          background-size: 100%;
+          width: 162%;
+        }
+
+        .col-in1 img{
+          margin-left: -122%;
+          width: 162%;
+        }
+
+        table{
+          margin-left: 1%;
+          margin-right: 2%;
+        }
+
+        .Acc{
+          margin-left: 5%;
+        }
+
+        .Acc ol{
+          margin-right: -60%;
+          text-align:unset;
+        }
+      }
+    </style>
+
+<!-----------javaScript for Toggle Menu-----------
+---------------------------------------------------
+---------------------------------------------------
+--------------------------------------------------->
+<script>
+    var navLinks=document.getElementById("navLinks");
+    function showMenu(){
+    navLinks.style.right="0";
+}
+
+    function hideMenu(){
+    navLinks.style.right="-200px";
+}
+</script>
+</body>
+</html>
