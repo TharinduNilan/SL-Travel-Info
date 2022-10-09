@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with-device-width,initial-scale=1.0">
+        <title>Polonnaruwa</title>
+        <link rel=javaScript href="javaScript.js">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;1,100;1,400;1,500&display=swap" rel="stylesheet">
+
+
+    </head>
+    <body>
+<!------------------------------------------------
+--------------------------------------------------
+--------------------HTML--------------------------
+--------------------------------------------------
+-------------------------------------------------->
+
+        <section class="header">
+            <nav>
+                <a href="../index.html"><img src=""></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="../index.html">HOME</a></li>
+                        <li><a href="../About.html">ABOUT</a></li>
+                        <li><a href="https://computingtechnologyblogger.blogspot.com/">BLOCK</a></li>
+                        <li><a href="">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <div class="text-box">
+                <h1>POLONNARUWA</h1>
+            </div>
+        </section>
+<!-------------Introduction-------------->
+<section class="background">
+    <div class="row">
+        <div class="col-in1">
+            <h1>POLONNARUWA VATADAGE</h1>
+            <img src="vatadage.jpg" width="100%">
+            <p>
+              Polonnaruwa Vatadage is a well-preserved Vatadage in the famous Dalada Maluwa quadrangle of the ancient city of ruins, Polonnaruwa. 
+              Vatadages are typical Buddhist structures found in Sri Lanka. 
+              These are circular, constructed using stone and brick with intricate stone carvings and a wooden roof. 
+              They were built to protect stupas. Currently, there are ten Vatadages in Sri Lanka, and the most popular one is Polonnaruwa Vatadage.
+            </p>
+
+            <br>    
+        </div>
+        
+        <div class="col-in2">
+            <h1>MINNERIYA NATIONAL PARK</h1>
+            <img src="minneriya.jpg" width="100%">
+            <p>The Minneriya National Park is in the Northern province of Sri Lanka, four hours away from Colombo, and 30 minutes away from Sigiriya. 
+              The national park is famous for its herds of elephants migrating for food, water and shelter, and forming a 'gathering' that can be witnessed by the visitors. 
+              The dry season is the best time to visit this place, as the majestic elephants migrate to the Minneriya Tank for water. Apart from elephants, 
+              the national park is also home to several mammals, birds, reptiles, and different kinds of plant species. 
+              Minneriya National Park comes under the dry zone, meaning, it receives less rainfall compared to the other areas in the country.
+            </p>
+
+            <br>    
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-in1">
+            <h1>SOMAWATHIYA</h1>
+            <img src="somawathiya.jpg" width="100%">
+            <p>Somawathiya (Somawathi Chethiya)  was built in 2nd century BC and this stupa is said to enshrine the right tooth relic of Lord Buddha.
+              According to chronicles, prince Giri-aba and princess Somawathi (sister of King Kavanthissa) lived on a small community called “Somapura” on the beds of Mahaveli River. 
+              Price Giriaba constructed Somawathi Chethiya on the request of his wife who wanted to engage in religious activities. Upon completion of the Stupa, 
+              the prince requested a monk named Mahinda for some “dathu” to be kept in the relic chamber of the stupa. Maha Thera Mahinda gave him the right tooth relic of Lord Buddha.
+            </p>
+
+            <br>    
+        </div>
+        
+        <div class="col-in2">
+            <h1>DIMBULAGALA RAJA MAHA VIHARAYA</h1>
+            <img src="Dimbulagala.jpg" width="100%">
+            <p>Dimbulagala Raja Maha Vihara is situated 16 kilometres south east of the ancient city of Polonnaruwa, 
+              Sri Lanka. The Dimbulagala range houses a number of caves cut into the rock with Brahmi inscriptions over their drip ledges.
+            </p>
+
+            <br>    
+        </div>
+    </div>
+</section>
+
+<!----------------Footer----------------->
+<section class="footer">
+    <h4>About Us</h4>
+    <div class="icons">
+        <i class="fa fa-facebook-square"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+    <p>Made with Sri Lanka</p>
+</section>
+
+
+<!------------------------------------------------
+--------------------------------------------------
+--------------------Style--------------------------
+--------------------------------------------------
+-------------------------------------------------->
+
+<style>
+    *{
+        margin:0;
+        padding:0;
+        font-family: 'Poppins', sans-serif;
+      }
+      
+      .a:after{
+        color: #000000;
+      }
+      
+      .header{
+        min-height: 100vh;
+        width:100%;
+        background-image: linear-gradient(rgba(6, 10, 32, 0.527),rgba(4, 10, 32, 0.527)),url(polonnaruwa.jpg);
+        background-position: center;
+        background-size: cover;
+        position: relative;
+      }
+      nav{
+        display: flex;
+        padding: 2% 6%;
+        justify-content: space-between;
+        align-items: center;
+      }
+      
+      nav img{
+        width: 150px;
+      }
+      
+      .nav-links{
+        flex:1;
+        text-align: right;
+      }
+      
+      .nav-links ul li{
+        list-style: none;
+        display: inline-block;
+        padding: 8px 12px;
+        position: relative;
+      }
+      
+      .nav-links ul li a{
+        color: #fff;
+        text-decoration: none;
+        font-size: 13px;
+      }
+      
+      .nav-links ul li ::after{
+        content: '';
+        width: 0%;
+        height: 2px;
+        background: #f44336;
+        display: block;
+        margin: auto;
+        transition: 0.1s;
+      }
+      
+      .nav-links ul li :hover::after{
+        width: 100%;
+      }
+    
+      nav .fa{
+        display: none;
+      }
+    
+      .text-box h1{
+        font-size: 62px;
+        color: rgb(255, 255, 255);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+      }
+
+      .hero-btn{
+        display: inline-block;
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        border: 1px solid rgb(0, 0, 0);
+        padding: 12px 34px;
+        font-size: 13px;
+        background: transparent;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .hero-btn:hover{
+        border: 1px solid #000000;
+        background: #bbbbbbc9;
+        transition: 0.1s;
+        color: #000000;
+    }
+/*--------------Introduction----------------*/
+.background{
+    margin: auto;
+    margin-left: 1%;
+    padding-right: 1%;
+    text-align: justify;
+}
+
+.row{
+    margin-top: 1%;
+    display: flex;
+    justify-content: space-between;
+}
+    
+.col-in1{
+    display: block;
+    width: 48%;
+    background-position:absolute;
+}
+
+.col-in1 h1{
+    text-align: center;
+}
+
+.col-in2{
+    display: block;
+    width: 48%;
+    background-position:absolute;
+}
+
+.col-in2 h1{
+    text-align: center;
+}
+
+
+/*------------------Footer--------------*/
+    .footer{
+      width: 100%;
+      text-align: center;
+      padding: 600;
+      background-color:  rgb(148, 248, 215);
+    }
+    
+    .footer h4{
+      margin-bottom: 25px;
+      margin-top: 20px;
+      font-weight: 600;
+    }
+    
+/*--------------Meadia-------------*/
+      @media(max-width :700px){
+        .text-box h1 {
+          font-size: 50px;
+        }
+      
+        .nav-links ul li{
+          display: block;
+        }
+      
+        .nav-links{
+          position: absolute;
+          background: #f44336;
+          height: 100vh;
+          width: 200px;
+          top:0;
+          right: -200px;
+          text-align: left;
+          z-index: 2;
+        }
+      
+        nav .fa{
+          display: block;
+          color: #fff;
+          margin: 10px;
+          font-size: 22px;
+          cursor: pointer;
+        }
+      
+        .nav-links ul{
+          padding: 30px;
+        }
+    
+        .img1{
+          background-size: 10%;
+        }
+      }
+</style>
+
+<!------------------------------------------------
+--------------------------------------------------
+--------------------javaScript--------------------
+--------------------------------------------------
+-------------------------------------------------->
+<script>
+    var navLinks=document.getElementById("navLinks");
+    function showMenu(){
+    navLinks.style.right="0";
+}
+
+    function hideMenu(){
+    navLinks.style.right="-200px";
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with-device-width,initial-scale=1.0">
+        <title>Sigiriya</title>
+        <link rel=javaScript href="javaScript.js">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;1,100;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+
+    </head>
+    <body>
+    <!------------------------------------------------
+    --------------------------------------------------
+    --------------------HTML--------------------------
+    --------------------------------------------------
+    -------------------------------------------------->
+
+        <section class="header">
+            <nav>
+                <a href="../index.html"><img src=""></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="../index.html">HOME</a></li>
+                        <li><a href="../About.html">ABOUT</a></li>
+                        <li><a href="https://computingtechnologyblogger.blogspot.com/">BLOCK</a></li>
+                        <li><a href="">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <div class="text-box">
+                <h1>SIGIRIYA</h1>
+            </div>
+        </section>
+        <br>
+<!-----------Introduction------------>
+        <section class="Background">
+            <div class="row">
+                <div class="col-in"> 
+                    <img src="Sigiriya2.jpg">
+                </div>
+
+                <div class="col-in1">
+                    <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63222.843066999325!2d80.7092157949969!3d7.954676733187304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3afca0dfa73179d1%3A0x1e04c1150cff0edf!2sSigiriya!5e0!3m2!1sen!2slk!4v1665164474742!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+                </div>
+            </div>
+            <br>
+            <div class="Introduction">
+            <h1><u>Introduction</u></h1><br>
+            <p>Unbelievable technical, stone methods, wall Arts with beautiful environment shows you the unlimited talent of the Sri Lankan aborigines. 
+              This world historical monument located at Mathale District of Sri Lanka.
+              According to the Sri Lankan history, the king Kashyapa created this Lion's rock for hide from his brother's attacks.
+              After the king's death the Sigiriya named as a Buddhist monastery until 14th century.</p>
+            </div>
+        </section>
+
+
+<!----------------Footer----------------->
+    <section class="footer">
+        <h4>About Us</h4>
+        <div class="icons">
+            <i class="fa fa-facebook-square"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made with Sri Lanka</p>
+    </section>
+
+<!--------------------------------------------
+----------------------------------------------
+-------------------Style----------------------
+---------------------------------------------
+---------------------------------------------->
+
+<style>
+    *{
+        margin:0;
+        padding:0;
+        font-family: 'Poppins', sans-serif;
+      }
+      
+      .a:after{
+        color: #000000;
+      }
+      
+      .header{
+        min-height: 100vh;
+        width:100%;
+        background-image: linear-gradient(rgba(6, 10, 32, 0.527),rgba(4, 10, 32, 0.527)),url(sigiriya.jpg);
+        background-position: center;
+        background-size: cover;
+        position: relative;
+      }
+      nav{
+        display: flex;
+        padding: 2% 6%;
+        justify-content: space-between;
+        align-items: center;
+      }
+      
+      nav img{
+        width: 150px;
+      }
+      
+      .nav-links{
+        flex:1;
+        text-align: right;
+      }
+      
+      .nav-links ul li{
+        list-style: none;
+        display: inline-block;
+        padding: 8px 12px;
+        position: relative;
+      }
+      
+      .nav-links ul li a{
+        color: #fff;
+        text-decoration: none;
+        font-size: 13px;
+      }
+      
+      .nav-links ul li ::after{
+        content: '';
+        width: 0%;
+        height: 2px;
+        background: #f44336;
+        display: block;
+        margin: auto;
+        transition: 0.1s;
+      }
+      
+      .nav-links ul li :hover::after{
+        width: 100%;
+      }
+    
+      nav .fa{
+        display: none;
+      }
+    
+      .text-box h1{
+        font-size: 62px;
+        color: rgb(0, 255, 76);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+      }
+
+      .hero-btn{
+        display: inline-block;
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        border: 1px solid rgb(0, 110, 255);
+        padding: 12px 50px;
+        font-size: 13px;
+        background: transparent;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .hero-btn:hover{
+        border: 1px solid #00a2ff;
+        background: #00a2ff;
+        transition: 0.1s;
+        color: #fbfeff;
+    }
+
+    .add{
+      margin-left: 90%;
+      margin-bottom: 5%;
+    }
+    
+    /*------------Introduction---------------*/
+    .Background{
+      margin-left: 1%;
+      padding-right: 40%;
+      text-align: justify;
+
+    }
+    
+    .Introduction h1{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 28px;
+    }
+    
+    .Introduction p{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        font-weight: 100vh;
+    }
+
+    .row{
+        margin-top: -1%;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .col-in1 iframe{
+        display: block;
+        background-size: 100%;
+        background-position:absolute;
+        padding-left: 2%;
+    }
+
+
+    /*------------------Footer--------------*/
+    .footer{
+      width: 100%;
+      text-align: center;
+      padding: 600;
+      background-color:  rgb(148, 248, 215);
+    }
+    
+    .footer h4{
+      margin-bottom: 25px;
+      margin-top: 20px;
+      font-weight: 600;
+    }
+    
+    /*--------------Meadia-------------*/
+      @media(max-width :700px){
+        .text-box h1 {
+          font-size: 50px;
+        }
+      
+        .nav-links ul li{
+          display: block;
+        }
+      
+        .nav-links{
+          position: absolute;
+          background: #f44336;
+          height: 100vh;
+          width: 200px;
+          top:0;
+          right: -200px;
+          text-align: left;
+          z-index: 2;
+        }
+      
+        nav .fa{
+          display: block;
+          color: #fff;
+          margin: 10px;
+          font-size: 22px;
+          cursor: pointer;
+        }
+      
+        .nav-links ul{
+          padding: 30px;
+        }
+
+        .add{
+          display: block;
+          width: 100%;
+          margin-left: 1%;
+        }
+        .col-in img{
+          width: 100%;
+          display: block;
+          margin-bottom: 4%;
+        }
+
+        .col-in1 iframe{
+          width: 100%;
+          display: block;
+          height: 50%;
+          margin-left: -5%;
+        }
+
+        .row{
+        margin-top: -1%;
+        display: block;
+        justify-content: space-between;
+        }
+
+        .Background{
+          background-size: 100%;
+          margin-left: 4%;
+          margin-right: -32%;
+        }
+      }
+    </style>
+
+<!-----------javaScript for Toggle Menu-----------
+---------------------------------------------------
+---------------------------------------------------
+--------------------------------------------------->
+<script>
+    var navLinks=document.getElementById("navLinks");
+    function showMenu(){
+    navLinks.style.right="0";
+}
+
+    function hideMenu(){
+    navLinks.style.right="-200px";
+}
+</script>
+</body>
+</html>
